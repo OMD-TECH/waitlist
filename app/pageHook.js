@@ -2,7 +2,7 @@
 
 // I WANTED USING ZOD FOR ERROR HANDLING BUT ITS A MINI PROJECT
 // PROBABLY NEXT TUTORIAL
-import { PiWarningThin } from "react-icons/pi";
+import { PiInstagramLogoFill, PiWarningThin } from "react-icons/pi";
 import { TbArrowsJoin2 } from "react-icons/tb";
 import { FaHandshake } from "react-icons/fa";
 
@@ -193,6 +193,9 @@ function PageHook() {
               Exciting Wave of New Resources on the Horizon. Sign up to Our
               Waitlist to be notified when we launch the E-library Web App.
             </p>
+            <div className="hover:text-neutral-600 cursor-pointer transition-all ease-in text-[16px] duration-200  dark:text-white">
+              <Link href={"https://www.instagram.com/nuesa_futo?igsh=MTdmMHR5eGRlZ3IzNw=="} className="flex items-center justify-center"><PiInstagramLogoFill/><p>NUESA instagram Handle</p></Link>
+            </div>
             {errors.email && (
               <p className="mt-5 border dark:border-white/25 border-[#704705] flex gap-x-3 items-center p-2 pl-5 max-w-md bg-gradient-to-r from-10% dark:from-[#704705] text-[#3a2503] from-[#f5a524] via-30% dark:via-black dark:to-black to-100% to-[#704705] mx-auto rounded-md dark:text-white ">
                 <PiWarningThin className="text-[#704705] dark:text-white text-lg" />
@@ -335,7 +338,8 @@ function PageHook() {
             />
           </div>
         </div>
-        {/* {isOpenModel && <p>Submitted</p>} */}
+        {isOpenModel && <p>Submitted</p>}
+
       </section>
       <div className="absolute right-0 opacity-20 -z-10 top-80 max-md:top-[500px]">
         <Image
@@ -378,8 +382,8 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
             <div className="relative z-10">
               <p className="lg:text-justify  leading-6 mb-6">
                 we'll do a little Giveaway on the Launch of this e-library
-                Website. So If you sign up today, which will only
-                take a few seconds and 1 click, you'll automatically be waitlisted and
+                Website. So If you sign up today and follow all social handles, which will only
+                take a few seconds and few clicks, you'll automatically be waitlisted and
                 participated in our giveaway, Join now!!.
               </p>
               <div className="flex gap-2">

@@ -147,7 +147,7 @@ function Headpage() {
           ))}
         </div>
 
-        <div className="flex flex-row gap-x-4  ">
+        <div className="flex flex-row gap-x-4  max-md:hidden">
           {people.map((testimonial, idx) => (
             <div
               className=" relative group"
